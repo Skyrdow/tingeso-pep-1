@@ -9,5 +9,4 @@ import java.util.Optional;
 @Repository
 public interface BrandBonusRepository extends JpaRepository<BrandBonusEntity, String> {
     Optional<BrandBonusEntity> findByBrand(String brand);
-
 }

@@ -15,14 +15,15 @@ public class DiscountByRepair {
         this.range4 = range4;
     }
 
-    public Integer getDiscountByRepair(Integer repairCount) throws Exception{
-        if (1 < repairCount && repairCount <= 2)
+    public Integer getDiscountByRepair(Integer repairCount) throws Exception {
+        if (repairCount == 0) return 0;
+        if (1 <= repairCount && repairCount <= 2)
             return range1;
-        if (3 < repairCount && repairCount <= 5)
+        if (3 <= repairCount && repairCount <= 5)
             return range2;
-        if (6 < repairCount && repairCount <= 9)
+        if (6 <= repairCount && repairCount <= 9)
             return range3;
-        if (10 < repairCount)
+        if (10 <= repairCount)
             return range4;
         throw new Exception("Repair count discount out of range");
     }

@@ -2,15 +2,13 @@ package com.example.demo.controllers;
 
 import com.example.demo.entities.ReparationEntity;
 import com.example.demo.services.ReparationService;
-import jakarta.websocket.server.PathParam;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
-import java.util.NoSuchElementException;
 
 @RestController
 @RequestMapping("/api/v1/reparation")
@@ -20,14 +18,29 @@ public class ReparationController {
     ReparationService reparationService;
 
     @GetMapping("/")
-    public ResponseEntity<List<ReparationEntity>> getReparations() {
+    public ResponseEntity<Map<String, List<Map>>> getReparations() {
         List<ReparationEntity> newReparations = reparationService.getReparations();
-        return ResponseEntity.ok(newReparations);
+        List<Map> response = new ArrayList<>();
+        for (ReparationEntity reparation: newReparations) {
+            System.out.println(reparationService.getReparationTypes(reparation));
+            response.add(Map.of("patent", reparation.getPatent(),
+                    "admissionDate", reparation.getAdmissionDate(),
+                    "reparationTypes", reparationService.getReparationTypes(reparation).toString(),
+                    "repairExitDate", reparation.getRepairExitDate(),
+                    "retrievalDate", reparation.getRetrievalDate()));
+        }
+        return ResponseEntity.ok(Map.of("reparations", response));
     }
 
     @PostMapping("/")
-    public ResponseEntity<ReparationEntity> saveReparation(@RequestBody ReparationEntity reparationEntity) {
-        ReparationEntity newReparation = reparationService.saveReparation(reparationEntity);
+    public ResponseEntity<?> saveReparation(@RequestBody ReparationEntity reparationEntity) {
+
+        ReparationEntity newReparation = null;
+        try {
+            newReparation = reparationService.saveReparation(reparationEntity);
+        } catch (Exception e) {
+            return ResponseEntity.badRequest().body(e.getMessage());
+        }
         return ResponseEntity.ok(newReparation);
     }
 }

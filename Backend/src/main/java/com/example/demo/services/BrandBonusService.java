@@ -5,6 +5,7 @@ import com.example.demo.repositories.BrandBonusRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -23,4 +24,5 @@ public class BrandBonusService {
         brandBonusRepository.save(brandBonus.get());
         return bonus;
     }
+    public List<BrandBonusEntity> getBrandBonusList() { return brandBonusRepository.findAll(); }
 }

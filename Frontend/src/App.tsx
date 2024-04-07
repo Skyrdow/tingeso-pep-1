@@ -1,7 +1,14 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
+import axios from 'axios'
 import './App.css'
+
+axios.get('http://localhost:8091/api/v1/report/2').then((res) => {
+  console.log(res.data)
+  console.log(res.data.Sedan);
+  
+})
 
 function App() {
   const [count, setCount] = useState(0)

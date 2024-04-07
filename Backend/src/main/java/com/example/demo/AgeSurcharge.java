@@ -30,13 +30,13 @@ public class AgeSurcharge {
         int yearsOld = currentYear - ageYear;
         System.out.println(yearsOld);
 
-        if (0 < yearsOld && yearsOld <= 5)
+        if (0 <= yearsOld && yearsOld <= 5)
             return range1;
-        if (6 < yearsOld && yearsOld <= 10)
+        if (6 <= yearsOld && yearsOld <= 10)
             return range2;
-        if (11 < yearsOld && yearsOld <= 15)
+        if (11 <= yearsOld && yearsOld <= 15)
             return range3;
-        if (16 < yearsOld)
+        if (16 <= yearsOld)
             return range4;
         throw new Exception("Age of surcharge out of range");
     }

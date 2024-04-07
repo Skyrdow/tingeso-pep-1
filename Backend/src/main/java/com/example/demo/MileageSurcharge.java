@@ -17,15 +17,15 @@ public class MileageSurcharge {
         this.range5 = range5;
     }
     public Integer getMileageSurcharge(Long mileage) throws Exception{
-        if (0 < mileage && mileage <= 5000)
+        if (0 <= mileage && mileage <= 5000)
             return range1;
-        if (5001 < mileage && mileage <= 12000)
+        if (5001 <= mileage && mileage <= 12000)
             return range2;
-        if (12001 < mileage && mileage <= 25000)
+        if (12001 <= mileage && mileage <= 25000)
             return range3;
-        if (25001 < mileage && mileage <= 40000)
+        if (25001 <= mileage && mileage <= 40000)
             return range4;
-        if (40001 < mileage)
+        if (40001 <= mileage)
             return range5;
         throw new Exception("Mileage surcharge out of range");
     }

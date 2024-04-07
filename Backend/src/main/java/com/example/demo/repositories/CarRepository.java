@@ -11,7 +11,6 @@ import java.util.Optional;
 
 @Repository
 public interface CarRepository extends JpaRepository<CarEntity, String> {
-    public Optional<CarEntity> findByPatent(String patent);
     List<CarEntity> findByCarType(CarType carType);
     List<CarEntity> findByMotorType(MotorType motorType);
     List<CarEntity> findByBrand(String brand);

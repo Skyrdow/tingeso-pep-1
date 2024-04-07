@@ -31,8 +31,8 @@ public class CarControllerTest {
     private CarService carService;
     @Test
     public void listCars_Success() {
-        CarEntity car1 = new CarEntity("ABC123", "Kia", "Model S", CarType.Sedan, new Date(), MotorType.Diesel, 5, 1005000L);
-        CarEntity car2 = new CarEntity("ABCD23", "Kia", "Model S", CarType.Sedan, new Date(), MotorType.Diesel, 5, 1005000L);
+        CarEntity car1 = new CarEntity("ABC123", "Kia", "Model S", CarType.Sedan, new Date(), MotorType.Diesel, 5, 1005000L, 0L);
+        CarEntity car2 = new CarEntity("ABCD23", "Kia", "Model S", CarType.Sedan, new Date(), MotorType.Diesel, 5, 1005000L, 0L);
         given(carService.getCars()).willReturn(List.of(car1, car2));
         try {
             mockMvc.perform(get("/api/v1/cars/"))
@@ -47,7 +47,7 @@ public class CarControllerTest {
     }
     @Test
     public void saveCar_Success() {
-        CarEntity car1 = new CarEntity("ABC123", "Kia", "Model S", CarType.Sedan, new Date(), MotorType.Diesel, 5, 1005000L);
+        CarEntity car1 = new CarEntity("ABC123", "Kia", "Model S", CarType.Sedan, new Date(), MotorType.Diesel, 5, 1005000L, 0L);
         given(carService.saveCar(Mockito.any(CarEntity.class))).willReturn(car1);
         String carJson = """
         {
@@ -69,6 +69,22 @@ public class CarControllerTest {
                     .andExpect(status().isOk())
                     .andExpect(jsonPath("$.patent", is("ABC123")))
                     .andExpect(jsonPath("$.brand", is("Kia")));
+        } catch (Exception e) {
+            fail(e.getMessage());
+        }
+    }
+    @Test
+    public void addBrandBonus_Success() {
+        CarEntity car1 = new CarEntity("ABC123", "Kia", "Model S", CarType.Sedan, new Date(), MotorType.Diesel, 5, 1005000L, 1000L);
+        given(carService.setBrandBonus("ABC123", 1000L)).willReturn(car1);
+
+        try {
+            mockMvc.perform(post("/api/v1/cars/brandBonus/ABC123/1000")
+                            .contentType(MediaType.APPLICATION_JSON))
+                    .andExpect(status().isOk())
+                    .andExpect(jsonPath("$.patent", is("ABC123")))
+                    .andExpect(jsonPath("$.brand", is("Kia")))
+                    .andExpect(jsonPath("$.brandBonus", is(1000)));
         } catch (Exception e) {
             fail(e.getMessage());
         }

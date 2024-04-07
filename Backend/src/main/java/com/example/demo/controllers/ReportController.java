@@ -1,11 +1,8 @@
 package com.example.demo.controllers;
 
-import com.example.demo.entities.CarEntity;
 import com.example.demo.enums.CarType;
 import com.example.demo.enums.MotorType;
 import com.example.demo.enums.ReparationType;
-import com.example.demo.services.BrandBonusService;
-import com.example.demo.services.CarService;
 import com.example.demo.services.ReportService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

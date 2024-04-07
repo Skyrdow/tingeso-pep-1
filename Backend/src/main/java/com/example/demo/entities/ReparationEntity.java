@@ -39,8 +39,4 @@ public class ReparationEntity {
         reparationTypeEntity.setReparationId(this.getId());
         reparationTypes.add(reparationTypeEntity);
     }
-    public void removeReparationType(ReparationTypeEntity reparationTypeEntity) {
-        reparationTypes.remove(reparationTypeEntity);
-        reparationTypeEntity.setReparation(null);
-    }
 }

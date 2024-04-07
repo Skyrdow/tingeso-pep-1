@@ -25,4 +25,9 @@ public class CarController {
         CarEntity newCarEntity = carService.saveCar(carEntity);
         return ResponseEntity.ok(newCarEntity);
     }
+    @PostMapping("/brandBonus/{patent}/{bonus}")
+    public ResponseEntity<CarEntity> addBrandBonus(@PathVariable String patent, @PathVariable Long bonus) {
+        CarEntity newCarEntity = carService.setBrandBonus(patent, bonus);
+        return ResponseEntity.ok(newCarEntity);
+    }
 }

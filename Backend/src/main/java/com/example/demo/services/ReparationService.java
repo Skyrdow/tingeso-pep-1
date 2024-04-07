@@ -17,8 +17,6 @@ public class ReparationService {
     @Autowired
     ReparationRepository reparationRepository;
     @Autowired
-    BrandBonusService brandBonusService;
-    @Autowired
     CarRepository carRepository;
     @Autowired
     ReparationTypeRepository reparationTypeRepository;
@@ -31,7 +29,8 @@ public class ReparationService {
     }
     public ReparationEntity saveReparation(ReparationEntity reparationEntity) throws Exception {
         ReparationEntity savedEntity = reparationRepository.save(reparationEntity);
-        if (getReparationTypes(savedEntity).isEmpty()) throw new Exception("Reparation without type");
+        System.out.println(savedEntity);
+        if (savedEntity.getReparationTypes().isEmpty()) throw new Exception("Reparation without type");
         for (ReparationTypeEntity rep:savedEntity.getReparationTypes()) {
             rep.setReparationId(savedEntity.getId());
             reparationTypeRepository.save(rep);

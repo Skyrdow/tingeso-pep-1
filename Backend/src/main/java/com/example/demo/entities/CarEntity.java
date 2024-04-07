@@ -26,4 +26,5 @@ public class CarEntity {
     private MotorType motorType;
     private int seatCount;
     private Long mileage;
+    private Long brandBonus;
 }

@@ -56,8 +56,7 @@ class ReparationServiceTest {
     }
     @Test
     public void whenSaveReparation_Success() {
-        ReparationTypeEntity repType = new ReparationTypeEntity();
-        repType.setReparationType(ReparationType.Combustible);
+        ReparationTypeEntity repType = new ReparationTypeEntity(1L, null, 1L, ReparationType.Frenos);
         reparation = new ReparationEntity(1L, "ABC123", new Date(), Set.of(repType), new Date(), new Date());
 
         when(reparationRepository.save(reparation)).thenReturn(reparation);
@@ -93,7 +92,7 @@ class ReparationServiceTest {
     }
     @Test
     public void whenReparationOnLast12MonthsCount_Success() {
-        CarEntity carEntity = new CarEntity("ABC123", "Kia", "Model S", CarType.Sedan, new Date(), MotorType.Diesel, 5, 5000L);
+        CarEntity carEntity = new CarEntity("ABC123", "Kia", "Model S", CarType.Sedan, new Date(), MotorType.Diesel, 5, 5000L, 0L);
         ReparationEntity reparation1 = new ReparationEntity(1L, "ABC123", new Date(), null, new Date(), new Date());
         ReparationEntity reparation2 = new ReparationEntity(1L, "ABC123", new Date(), null, new Date(), new Date());
 

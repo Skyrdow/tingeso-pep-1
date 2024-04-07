@@ -21,8 +21,6 @@ public class ReportService {
     @Autowired
     CarService carService;
     @Autowired
-    BrandBonusService brandBonusService;
-    @Autowired
     ReparationService reparationService;
     @Autowired
     ReparationRepository reparationRepository;
@@ -82,20 +80,20 @@ public class ReportService {
     }
 
     public Map getReport3() {
-        Map<String, Long> times = new HashMap();
+        Map<String, Long> times = new HashMap<>();
         List<String> brands = carService.getBrands();
         for (String brand: brands) {
             List<CarEntity> brandedCars = carService.getCarsByBrand(brand);
-            Long timeAcumulator = 0L;
-            Long sizeAcumulator = 0L;
+            Long timeAccumulator = 0L;
+            Long sizeAccumulator = 0L;
             for (CarEntity brandedCar: brandedCars) {
                 List<ReparationEntity> brandedReparations = reparationRepository.findByPatent(brandedCar.getPatent());
                 for (ReparationEntity brandedReparation: brandedReparations) {
-                    timeAcumulator += reparationService.getReparationTime(brandedReparation);
-                    sizeAcumulator++;
+                    timeAccumulator += reparationService.getReparationTime(brandedReparation);
+                    sizeAccumulator++;
                 }
             }
-            Long meanTime = timeAcumulator / sizeAcumulator;
+            Long meanTime = timeAccumulator / sizeAccumulator;
             times.put(brand, meanTime);
         }
         return times;
@@ -171,7 +169,7 @@ public class ReportService {
                 daySum += pc.discountByDay.getDiscountByDay(reparation.getAdmissionDate());
             }
             Float dayDiscount = daySum/100f;
-            Long brandBonus = brandBonusService.getBrandBonus(car.getBrand());
+            Long brandBonus = car.getBrandBonus();
 
             return ((repairDiscount + dayDiscount) * price) + brandBonus;
         } catch (Exception e) { throw new Exception(e.getMessage()); }

@@ -27,8 +27,8 @@ public class CarServiceTest {
     @Test
     public void whenGetCars_thenSuccess() {
         List<CarEntity> cars = new ArrayList<>();
-        cars.add(new CarEntity("ABC123", "Kia", "Modelo S", CarType.Sedan, new Date(), MotorType.Diesel, 5, 1000L));
-        cars.add(new CarEntity("BCD123", "Kia", "Modelo S", CarType.SUV, new Date(), MotorType.Electrico, 5, 1000L));
+        cars.add(new CarEntity("ABC123", "Kia", "Modelo S", CarType.Sedan, new Date(), MotorType.Diesel, 5, 1000L, 0L));
+        cars.add(new CarEntity("BCD123", "Kia", "Modelo S", CarType.SUV, new Date(), MotorType.Electrico, 5, 1000L, 0L));
 
         when(carRepository.findAll()).thenReturn(cars);
 
@@ -36,7 +36,7 @@ public class CarServiceTest {
     }
     @Test
     public void whenSaveCar_thenSuccess() {
-        CarEntity car = new CarEntity("ABC123", "Kia", "Modelo S", CarType.Sedan, new Date(), MotorType.Diesel, 5, 1000L);
+        CarEntity car = new CarEntity("ABC123", "Kia", "Modelo S", CarType.Sedan, new Date(), MotorType.Diesel, 5, 1000L, 0L);
 
         when(carRepository.save(car)).thenReturn(car);
 
@@ -45,8 +45,8 @@ public class CarServiceTest {
     @Test
     public void whenGetCarsByCarType_thenSuccess() {
         List<CarEntity> cars = new ArrayList<>();
-        cars.add(new CarEntity("ABC123", "Kia", "Modelo S", CarType.Hatchback, new Date(), MotorType.Diesel, 5, 1000L));
-        cars.add(new CarEntity("BCD123", "Kia", "Modelo S", CarType.Hatchback, new Date(), MotorType.Electrico, 5, 1000L));
+        cars.add(new CarEntity("ABC123", "Kia", "Modelo S", CarType.Hatchback, new Date(), MotorType.Diesel, 5, 1000L, 0L));
+        cars.add(new CarEntity("BCD123", "Kia", "Modelo S", CarType.Hatchback, new Date(), MotorType.Electrico, 5, 1000L, 0L));
 
         when(carRepository.findByCarType(CarType.Hatchback)).thenReturn(cars);
 
@@ -55,8 +55,8 @@ public class CarServiceTest {
     @Test
     public void whenGetCarsByMotorType_thenSuccess() {
         List<CarEntity> cars = new ArrayList<>();
-        cars.add(new CarEntity("ABC123", "Kia", "Modelo S", CarType.Hatchback, new Date(), MotorType.Diesel, 5, 1000L));
-        cars.add(new CarEntity("BCD123", "Kia", "Modelo S", CarType.Hatchback, new Date(), MotorType.Diesel, 5, 1000L));
+        cars.add(new CarEntity("ABC123", "Kia", "Modelo S", CarType.Hatchback, new Date(), MotorType.Diesel, 5, 1000L, 0L));
+        cars.add(new CarEntity("BCD123", "Kia", "Modelo S", CarType.Hatchback, new Date(), MotorType.Diesel, 5, 1000L, 0L));
 
         when(carRepository.findByMotorType(MotorType.Diesel)).thenReturn(cars);
 
@@ -65,8 +65,8 @@ public class CarServiceTest {
     @Test
     public void whenGetCarsByBrand_thenSuccess() {
         List<CarEntity> cars = new ArrayList<>();
-        cars.add(new CarEntity("ABC123", "Kia", "Modelo S", CarType.Hatchback, new Date(), MotorType.Diesel, 5, 1000L));
-        cars.add(new CarEntity("BCD123", "Kia", "Modelo S", CarType.Hatchback, new Date(), MotorType.Diesel, 5, 1000L));
+        cars.add(new CarEntity("ABC123", "Kia", "Modelo S", CarType.Hatchback, new Date(), MotorType.Diesel, 5, 1000L, 0L));
+        cars.add(new CarEntity("BCD123", "Kia", "Modelo S", CarType.Hatchback, new Date(), MotorType.Diesel, 5, 1000L, 0L));
 
         when(carRepository.findByBrand("Kia")).thenReturn(cars);
 
@@ -75,12 +75,18 @@ public class CarServiceTest {
     @Test
     public void whenGetBrands_thenSuccess() {
         List<CarEntity> cars = new ArrayList<>();
-        cars.add(new CarEntity("ABC123", "Kia", "Modelo S", CarType.Hatchback, new Date(), MotorType.Diesel, 5, 1000L));
-        cars.add(new CarEntity("BCD123", "Volvo", "Modelo S", CarType.Hatchback, new Date(), MotorType.Diesel, 5, 1000L));
+        cars.add(new CarEntity("ABC123", "Kia", "Modelo S", CarType.Hatchback, new Date(), MotorType.Diesel, 5, 1000L, 0L));
+        cars.add(new CarEntity("BCD123", "Volvo", "Modelo S", CarType.Hatchback, new Date(), MotorType.Diesel, 5, 1000L, 0L));
 
         when(carRepository.findAll()).thenReturn(cars);
 
         assertThat(carService.getBrands()).isEqualTo(List.of("Kia", "Volvo"));
     }
-
+    @Test
+    public void whenSetBrandBonus_Success() {
+        CarEntity car1 = new CarEntity("ABC123", "Kia", "Modelo S", CarType.Sedan, new Date(), MotorType.Diesel, 5, 1000L, 0L);
+        CarEntity car2 = new CarEntity("ABC123", "Kia", "Modelo S", CarType.Sedan, new Date(), MotorType.Diesel, 5, 1000L, 1000L);
+        when(carRepository.findByPatent("ABC123")).thenReturn(car1);
+        assertThat(carService.setBrandBonus("ABC123", 1000L)).isEqualTo(car2);
+    }
 }

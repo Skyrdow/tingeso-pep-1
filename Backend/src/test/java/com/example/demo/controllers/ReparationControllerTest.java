@@ -34,8 +34,6 @@ public class ReparationControllerTest {
     private MockMvc mockMvc;
     @MockBean
     private ReparationService reparationService;
-    @MockBean
-    private ReparationTypeRepository reparationTypeRepository;
 
     @Test
     public void getReparations_Success() {

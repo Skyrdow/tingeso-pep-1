@@ -5,40 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="02e6e954-4dc0-45bb-bb9a-93ade2159a1f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/AutofixApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/AutofixApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/controllers/BrandBonusController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/controllers/CarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/controllers/CarController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/controllers/ReportController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/controllers/ReportController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/entities/BrandBonusEntity.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/entities/CarEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/entities/CarEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/entities/ReparationEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/entities/ReparationEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/repositories/BrandBonusRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/repositories/CarRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/repositories/CarRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/services/BrandBonusService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/services/CarService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/services/CarService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/services/ReparationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/services/ReparationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/services/ReportService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/services/ReportService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/demo/AutofixApplicationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/demo/AutofixApplicationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/demo/controllers/CarControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/demo/controllers/CarControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/example/demo/controllers/ReparationControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/demo/controllers/ReparationControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/example/demo/controllers/ReportControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/demo/controllers/ReportControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/demo/repositories/BrandBonusRepositoryTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/demo/services/BrandBonusServiceTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/demo/services/CarServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/demo/services/CarServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/demo/services/ReparationServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/demo/services/ReparationServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/demo/services/ReportServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/demo/services/ReportServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/controllers/CarController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/controllers/CarController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/controllers/ReportController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/controllers/ReportController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/entities/CarEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/entities/CarEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/entities/ReparationEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/entities/ReparationEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/repositories/CarRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/repositories/CarRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/services/BrandBonusService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/services/CarService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/services/CarService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/services/ReparationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/services/ReparationService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/services/ReportService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/services/ReportService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/example/demo/services/BrandBonusServiceTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/example/demo/services/ReparationServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/example/demo/services/ReparationServiceTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,7 +119,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CarControllerTest.addBrandBonus_Success" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ReportControllerTest.getReport1_Success" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo" />
       <extension name="coverage">
         <pattern>
@@ -157,30 +128,62 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.example.demo.controllers" />
-      <option name="MAIN_CLASS_NAME" value="com.example.demo.controllers.CarControllerTest" />
-      <option name="METHOD_NAME" value="addBrandBonus_Success" />
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.controllers.ReportControllerTest" />
+      <option name="METHOD_NAME" value="getReport1_Success" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CarServiceTest.whenSetBrandBonus_Success" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ReportControllerTest.getReport2_Success" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.demo.services.*" />
+          <option name="PATTERN" value="com.example.demo.controllers.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.example.demo.services" />
-      <option name="MAIN_CLASS_NAME" value="com.example.demo.services.CarServiceTest" />
-      <option name="METHOD_NAME" value="whenSetBrandBonus_Success" />
+      <option name="PACKAGE_NAME" value="com.example.demo.controllers" />
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.controllers.ReportControllerTest" />
+      <option name="METHOD_NAME" value="getReport2_Success" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReportServiceTest.whenGetReport2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ReportControllerTest.getReport3_Success" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.demo.controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.demo.controllers" />
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.controllers.ReportControllerTest" />
+      <option name="METHOD_NAME" value="getReport3_Success" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReportControllerTest.getReport4_Success" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.demo.controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.demo.controllers" />
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.controllers.ReportControllerTest" />
+      <option name="METHOD_NAME" value="getReport4_Success" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReportServiceTest.whenGetReport1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo" />
       <extension name="coverage">
         <pattern>
@@ -190,39 +193,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.example.demo.services" />
       <option name="MAIN_CLASS_NAME" value="com.example.demo.services.ReportServiceTest" />
-      <option name="METHOD_NAME" value="whenGetReport2" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ReportServiceTest.whenGetReport3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.demo.services.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.demo.services" />
-      <option name="MAIN_CLASS_NAME" value="com.example.demo.services.ReportServiceTest" />
-      <option name="METHOD_NAME" value="whenGetReport3" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ReportServiceTest.whenGetReport4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.demo.services.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.demo.services" />
-      <option name="MAIN_CLASS_NAME" value="com.example.demo.services.ReportServiceTest" />
-      <option name="METHOD_NAME" value="whenGetReport4" />
+      <option name="METHOD_NAME" value="whenGetReport1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -262,21 +233,21 @@
     <list>
       <item itemvalue="Application.Autofix" />
       <item itemvalue="JUnit.Tests" />
-      <item itemvalue="JUnit.CarControllerTest.addBrandBonus_Success" />
-      <item itemvalue="JUnit.CarServiceTest.whenSetBrandBonus_Success" />
-      <item itemvalue="JUnit.ReportServiceTest.whenGetReport2" />
-      <item itemvalue="JUnit.ReportServiceTest.whenGetReport3" />
-      <item itemvalue="JUnit.ReportServiceTest.whenGetReport4" />
+      <item itemvalue="JUnit.ReportControllerTest.getReport1_Success" />
+      <item itemvalue="JUnit.ReportControllerTest.getReport2_Success" />
+      <item itemvalue="JUnit.ReportControllerTest.getReport3_Success" />
+      <item itemvalue="JUnit.ReportControllerTest.getReport4_Success" />
+      <item itemvalue="JUnit.ReportServiceTest.whenGetReport1" />
       <item itemvalue="Spring Boot.AutofixApplication" />
       <item itemvalue="Spring Boot.AutofixApplication (1)" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CarControllerTest.addBrandBonus_Success" />
-        <item itemvalue="JUnit.CarServiceTest.whenSetBrandBonus_Success" />
-        <item itemvalue="JUnit.ReportServiceTest.whenGetReport4" />
-        <item itemvalue="JUnit.ReportServiceTest.whenGetReport2" />
-        <item itemvalue="JUnit.ReportServiceTest.whenGetReport3" />
+        <item itemvalue="JUnit.ReportControllerTest.getReport3_Success" />
+        <item itemvalue="JUnit.ReportControllerTest.getReport4_Success" />
+        <item itemvalue="JUnit.ReportControllerTest.getReport2_Success" />
+        <item itemvalue="JUnit.ReportControllerTest.getReport1_Success" />
+        <item itemvalue="JUnit.ReportServiceTest.whenGetReport1" />
       </list>
     </recent_temporary>
   </component>
@@ -321,6 +292,7 @@
       <workItem from="1712426116573" duration="2552000" />
       <workItem from="1712442963727" duration="8991000" />
       <workItem from="1712518281900" duration="11012000" />
+      <workItem from="1712619488359" duration="6095000" />
     </task>
     <servers />
   </component>
@@ -351,16 +323,6 @@
           <option name="timeStamp" value="1" />
         </breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/services/ReportService.java</url>
-          <line>31</line>
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/services/ReportService.java</url>
-          <line>164</line>
-          <option name="timeStamp" value="23" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/controllers/ReparationController.java</url>
           <line>21</line>
           <option name="timeStamp" value="24" />
@@ -370,16 +332,11 @@
           <line>65</line>
           <option name="timeStamp" value="26" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/services/ReportService.java</url>
-          <line>54</line>
-          <option name="timeStamp" value="28" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Backend$Tests.ic" NAME="Tests Coverage Results" MODIFIED="1712529107414" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Backend$Tests.ic" NAME="Tests Coverage Results" MODIFIED="1712628304335" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Backend$com_example_demo_in_demo.ic" NAME="com.example.demo in demo Coverage Results" MODIFIED="1712372636777" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
